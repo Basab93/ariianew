@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARIIA 2026 — Official Site</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR (Enhanced) ================= -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
+      <img src="logo-removebg-preview.png" alt="ARIIA Logo" height="50" class="me-1">
+      <span>ARIIA 2026</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center text-uppercase fw-semibold">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
+        <li class="nav-item"><a class="nav-link" href="submission.html">Submission</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+
+
+        <!-- <li class="nav-item ms-lg-3">
+          <a class="btn btn-gradient fw-bold px-4 py-2" href="register.html">Register</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- ================= HERO SLIDESHOW ================= -->
+<section id="home" class="hero-carousel position-relative">
+  <div id="heroSlides" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active" style="background-image:url('images/dsu1.png')">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="hero-caption text-white text-start">
+            <h1 class="display-6 fw-bold">
+              2ND INTERNATIONAL CONFERENCE ON<br>
+              AUGMENTED REALITY, INTELLIGENT SYSTEM, AND INDUSTRIAL AUTOMATION<br>
+              (ARIIA 2026)
+            </h1>
+            <p class="lead fw-semibold mb-4">18–19 December 2026 • Dayananda Sagar University (Hybrid)</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="brochure.pdf" target="_blank" class="btn btn-danger btn-lg fw-bold">Brochure</a>
+              <a href="register.html" class="btn btn-outline-light btn-lg fw-bold">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="carousel-item" style="background-image:url('images/MU Jaipur.jpg')">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="hero-caption text-white text-start">
+            <p class="fs-5 fw-semibold text-uppercase mb-1">Jointly Organized by</p>
+            <h2 class="fw-bold lh-sm">Manipal Institute of Technology &amp; Manipal University Jaipur</h2>
+            <p class="fs-6 fw-semibold text-uppercase mt-3 mb-1">In Association With</p>
+            <h4 class="fw-bold lh-sm">University of Malta, Malta &amp; University of Warwick, UK</h4>
+            <div class="d-flex gap-3 flex-wrap mt-4">
+              <a href="brochure.pdf" target="_blank" class="btn btn-danger btn-lg fw-bold">Brochure</a>
+              <a href="register.html" class="btn btn-outline-light btn-lg fw-bold">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="carousel-item" style="background-image:url('images/hero1.jpg')">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="hero-caption text-white text-start">
+            <h2 class="display-6 fw-bold">Dec 18 – 19, 2026 • Hybrid Mode</h2>
+            <p class="lead fw-semibold mb-4">Experience Innovation and Collaboration at ARIIA 2026</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="brochure.pdf" target="_blank" class="btn btn-danger btn-lg fw-bold">Brochure</a>
+              <a href="register.html" class="btn btn-outline-light btn-lg fw-bold">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlides" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlides" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- ================= BIG CENTER COUNTDOWN (styled to match screenshot) ================= -->
+<section class="countdown-hero-wrap" aria-label="Conference countdown">
+  <div class="container">
+    <div class="countdown-card mx-auto shadow-lg" role="region" aria-label="Countdown to ARIIA 2026">
+      <div class="count-grid" aria-hidden="false">
+        <div class="count-col">
+          <div class="count-number" id="cd-days">00</div>
+          <div class="count-label">Days</div>
+        </div>
+
+        <div class="count-sep">:</div>
+
+        <div class="count-col">
+          <div class="count-number" id="cd-hours">00</div>
+          <div class="count-label">Hours</div>
+        </div>
+
+        <div class="count-sep">:</div>
+
+        <div class="count-col">
+          <div class="count-number" id="cd-minutes">00</div>
+          <div class="count-label">Minutes</div>
+        </div>
+
+        <div class="count-sep">:</div>
+
+        <div class="count-col">
+          <div class="count-number" id="cd-seconds">00</div>
+          <div class="count-label">Seconds</div>
+        </div>
+      </div>
+
+     <div class="count-footer d-flex justify-content-between align-items-center">
+  <div class="d-flex gap-2">
+    <a class="btn btn-sm btn-light fw-bold"
+       href="https://ieeexplore.ieee.org/xpl/conhome/11051340/proceeding"
+       target="_blank" rel="noopener">
+      IEEE Xplore Proceedings
+    </a>
+  </div>
+  <div class="btn btn-sm btn-light fw-bold">ARIIA 2026 • 18–19 Dec • Dayananda Sagar University</div>
+</div>
+
+
+      <!-- for screen readers -->
+      <div id="cd-live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Countdown Section Ends -->
+<div class="section-bridge"></div>
+
+<!-- ================= VENUE SHOWCASE (Final Refined) ================= -->
+<section>
+  <div class="venue-overlay"></div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+
+      <!-- Left text section -->
+      <div class="col-lg-6 col-12">
+        <div class="venue-text reveal">
+          <p class="kicker text-uppercase fw-bold mb-2">Conference Venue</p>
+          <h2 class="fw-bold mb-3">Dayananda Sagar University, Bengaluru</h2>
+          <p class="lead fw-semibold mb-4">
+            Set against the lush campus of DSU, the 2nd International Conference on ARIIA 2026 
+            will take place in a hybrid format, combining in-person innovation and virtual participation.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <span class="badge bg-light text-dark fw-semibold px-3 py-2">
+              <i class="bi bi-laptop me-1"></i> Hybrid Mode
+            </span>
+            <span class="badge bg-light text-dark fw-semibold px-3 py-2">
+              <i class="bi bi-calendar-event me-1"></i> 18–19 December 2026
+            </span>
+          </div>
+
+          <a href="https://www.google.com/maps/place/Dayananda+Sagar+University+(DSU)+-+City+Campus/"
+             target="_blank" rel="noopener"
+             class="btn btn-outline-light fw-bold px-4">
+             <i class="bi bi-geo-alt me-1"></i> View on Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Right visual card -->
+      <div class="col-lg-6 col-12">
+        <div class="venue-card shadow-lg reveal">
+          <div class="venue-img position-relative overflow-hidden rounded-3">
+            <img src="images/dsu1.png" alt="Dayananda Sagar University" class="w-100 h-100 object-cover">
+            <div class="map-overlay position-absolute bottom-0 start-0 end-0 text-center py-3 bg-gradient-dark">
+              <p class="fw-bold mb-1 fs-5 text-white">Bengaluru, India</p>
+            </div>
+          </div>
+
+          <div class="venue-info p-4">
+            <h5 class="fw-bold mb-2">Organized By</h5>
+            <p class="small mb-0">
+              <strong>Department of Computer Science and Engineering (AI &amp; ML)</strong><br>
+              Dayananda Sagar University, Bengaluru, India.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section divider (Wave) -->
+<div class="section-divider-wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+    <path d="M0,64 C280,120 560,0 840,40 C1120,80 1300,96 1440,50 L1440,110 L0,110 Z"></path>
+  </svg>
+</div>
+
+
+
+<!-- ================= OVERVIEW + IMPORTANT DATES ================= -->
+<!-- ================= OVERVIEW (New Magazine Layout) ================= -->
+<section id="overview" class="overview-modern section-pad">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <!-- Left column: text -->
+      <div class="col-lg-6 order-lg-1 order-2">
+        <div class="overview-text reveal">
+          <span class="kicker text-uppercase fw-bold">Conference Overview</span>
+          <h2 class="fw-bold title mb-4">Shaping the Future of Intelligent Systems</h2>
+
+          <p class="lead text-muted mb-3">
+            The 2nd International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA-2026)
+            serves as a dynamic forum that brings together visionaries and innovators to redefine the role of intelligent technologies
+            in modern industry.
+          </p>
+
+          <p class="text-muted mb-4">
+            Hosted by <strong>Dayananda Sagar University</strong> in association with <strong>Manipal Institute of Technology</strong>,
+            <strong>Manipal University Jaipur</strong>, and global partners, the event bridges academia, industry, and policy makers to
+            accelerate the adoption of next-generation smart systems. Participants will engage through keynotes, paper presentations,
+            exhibitions, and networking sessions.
+          </p>
+
+          <ul class="overview-list">
+            <li>Global platform for AI, AR/VR, and Industry 4.0 research</li>
+            <li>IEEE-indexed proceedings and selected journal publications</li>
+            <li>Hybrid mode — on-site & virtual participation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right column: artistic collage -->
+      <div class="col-lg-6 order-lg-2 order-1">
+        <div class="overview-collage reveal">
+          <div class="img-frame large shadow-sm">
+            <img src="images/overview.png" alt="Conference overview">
+          </div>
+          <div class="img-frame small shadow-sm">
+            <img src="images/dsu1.png" alt="Conference campus">
+          </div>
+          <div class="info-box shadow-lg">
+            <h5 class="fw-bold mb-1 text-white">18 – 19 December 2026</h5>
+            <p class="text-light small mb-0">Hybrid Conference • Bengaluru, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ================= IMPORTANT DATES (Modern Timeline) ================= -->
+<div class="col-lg-6 offset-lg-6">
+  <div class="dates-timeline reveal">
+    <h3 class="fw-bold mb-4 text-primary">Important Dates</h3>
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <span class="dot"></span>
+      <div class="content">
+        <h6 class="fw-bold mb-1">Full Paper Submission</h6>
+        <p class="small text-muted mb-0">July 20, 2026</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="dot"></span>
+      <div class="content">
+        <h6 class="fw-bold mb-1">Paper Acceptance Notification</h6>
+        <p class="small text-muted mb-0">September 10, 2026</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="dot"></span>
+      <div class="content">
+        <h6 class="fw-bold mb-1">Registration Start Date</h6>
+        <p class="small text-muted mb-0">September 30, 2026</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="dot"></span>
+      <div class="content">
+        <h6 class="fw-bold mb-1">Registration End Date</h6>
+        <p class="small text-muted mb-0">November 10, 2026</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="dot"></span>
+      <div class="content">
+        <h6 class="fw-bold mb-1">Camera Ready Paper Submission</h6>
+        <p class="small text-muted mb-0">November 15, 2026</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</section>
+
+
+
+
+
+<!-- ================= PARTNERS (Brand Wall – NEW) ================= -->
+<section id="partners" class="partners-alt section-pad">
+  <div class="container">
+
+    <!-- Section header -->
+    <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between mb-4 gap-3">
+      <div>
+        <p class="kicker text-uppercase fw-bold mb-1 text-primary">Our Network</p>
+        <h2 class="title fw-bold m-0">Organizers & Partners</h2>
+      </div>
+      <ul class="legend list-unstyled d-flex flex-wrap gap-2 m-0">
+        <li><span class="swatch org"></span> Organized by</li>
+        <li><span class="swatch assoc"></span> In association with</li>
+        <li><span class="swatch joint"></span> Jointly organized</li>
+        <li><span class="swatch sdg"></span> SDG Goals</li>
+      </ul>
+    </div>
+
+    <!-- Brand wall (zig-zag) -->
+    <div class="brand-wall">
+      <!-- Organized by -->
+      <article class="brand-tile org reveal">
+        <div class="ribbon">Organized by</div>
+        <div class="logo-box">
+          <img src="dsu.png" alt="Dayananda Sagar University">
+        </div>
+        <h5 class="brand-name">Dayananda Sagar University</h5>
+      </article>
+
+      <!-- In association with -->
+      <article class="brand-tile assoc reveal">
+        <div class="ribbon">In association with</div>
+        <div class="logo-row">
+          <div class="logo-box sm">
+            <img src="images/wordmark.svg.svg" alt="University of Warwick">
+          </div>
+          <div class="logo-box sm">
+            <img src="images/malta.png" alt="University of Malta">
+          </div>
+        </div>
+        <h5 class="brand-name">Warwick • Malta</h5>
+      </article>
+
+      <!-- Jointly organized -->
+      <article class="brand-tile joint reveal">
+        <div class="ribbon">Jointly organized</div>
+        <div class="logo-row">
+          <div class="logo-box sm">
+            <img src="images/mahe_new.png" alt="Manipal Institute of Technology">
+          </div>
+          <div class="logo-box sm">
+            <img src="images/manipal_jaipur.svg" alt="Manipal University Jaipur">
+          </div>
+        </div>
+        <h5 class="brand-name">MIT (MAHE) • MU Jaipur</h5>
+      </article>
+
+      <!-- SDG Goals -->
+      <article class="brand-tile sdg reveal">
+        <div class="ribbon">SDG Goals</div>
+        <div class="logo-box tall">
+          <img src="images/sdg.png" alt="Sustainable Development Goals 4, 8, 9, 11, 12, 17">
+        </div>
+        <h5 class="brand-name">UN SDGs</h5>
+      </article>
+    </div>
+  </div>
+</section>
+     
+
+<!-- ================= TRACKS (Diagonal Grid Layout) ================= -->
+<section id="tracks" class="tracks-diagonal section-pad text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="kicker text-uppercase fw-bold mb-1">Conference Tracks</p>
+      <h2 class="fw-bold title mb-4">Explore the Emerging Research Frontiers</h2>
+    </div>
+
+    <div class="track-grid">
+      <div class="track-card reveal">
+        <span class="icon">🤖</span>
+        <h5 class="fw-bold mb-2">Robotics & Automation</h5>
+        <p>From industrial robots to autonomous systems redefining precision and efficiency.</p>
+      </div>
+      <div class="track-card reveal">
+        <span class="icon">🏭</span>
+        <h5 class="fw-bold mb-2">Industry 4.0 / 5.0</h5>
+        <p>Integrating smart manufacturing, digital twins, and human–machine collaboration.</p>
+      </div>
+      <div class="track-card reveal">
+        <span class="icon">🧠</span>
+        <h5 class="fw-bold mb-2">AI & Machine Learning</h5>
+        <p>Advancing deep learning, edge intelligence, and interpretable AI for real-world applications.</p>
+      </div>
+      <div class="track-card reveal">
+        <span class="icon">🧬</span>
+        <h5 class="fw-bold mb-2">Bioengineering</h5>
+        <p>Innovations in biomedical imaging, wearable sensors, and medical device automation.</p>
+      </div>
+      <div class="track-card reveal">
+        <span class="icon">🌐</span>
+        <h5 class="fw-bold mb-2">Communication Networks</h5>
+        <p>5G, IoT, and network intelligence driving seamless connectivity and automation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= ACADEMIC HIGHLIGHTS (Circular Design) ================= -->
+<section id="highlights" class="highlights-circular section-pad">
+  <div class="container">
+    <div class="section-head text-center mb-5">
+      <p class="kicker text-uppercase fw-bold mb-1">Academic Highlights</p>
+      <h2 class="fw-bold title">Explore, Present, and Collaborate</h2>
+    </div>
+
+    <div class="circle-grid">
+      <!-- Card 1 -->
+      <article class="circle-card reveal">
+        <div class="circle-img">
+          <img src="images/keynote.jpg" alt="Keynote Sessions">
+          <span class="circle-badge">Keynote</span>
+        </div>
+        <div class="circle-content">
+          <h4 class="fw-bold mb-2">Keynote Sessions</h4>
+          <p class="text-muted mb-0">Insights from leaders in AI, robotics, and automation.</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="circle-card reveal">
+        <div class="circle-img">
+          <img src="images/pannel.jpg" alt="Expert Panels">
+          <span class="circle-badge">Panels</span>
+        </div>
+        <div class="circle-content">
+          <h4 class="fw-bold mb-2">Expert Panels</h4>
+          <p class="text-muted mb-0">Debates on industry challenges and emerging technologies.</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="circle-card reveal">
+        <div class="circle-img">
+          <img src="images/presentation.jpg" alt="Paper Presentations">
+          <span class="circle-badge">Papers</span>
+        </div>
+        <div class="circle-content">
+          <h4 class="fw-bold mb-2">Paper Presentations</h4>
+          <p class="text-muted mb-0">Showcase your innovations to an international audience.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CMT ACKNOWLEDGMENT ================= -->
+<section id="cmt" class="section-pad bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">CMT Acknowledgment</h2>
+    <p class="mb-0">
+      CMT Acknowledgment: The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+      This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services
+      as well as for software development and support.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SUBMISSION REQUIREMENTS ================= -->
+<section id="submission" class="section-pad">
+  <div class="container">
+    <div class="section-head text-center mb-4">
+      <h2 class="fw-bold">Submission Requirements</h2>
+      <div class="underline mx-auto"></div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">Originality</h5>
+          <p class="mb-0">Novel and unpublished research findings with significant contribution to the field.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">Language</h5>
+          <p class="mb-0">English text with consistent usage (avoid mixing American and British styles).</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">Quality</h5>
+          <p class="mb-0">Proofread for grammatical errors and correct scientific English usage.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">Ethics</h5>
+          <p class="mb-0">Follow academic ethics — no plagiarism, duplicate, or simultaneous submissions.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">AI Limit</h5>
+          <p class="mb-0">Responsible AI usage — avoid auto-generated or non-original text content.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="req-tile reveal">
+          <h5 class="text-primary fw-bold">Similarity Limit</h5>
+          <p class="mb-0">Maintain a similarity index below 15% as verified by standard plagiarism tools.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========= FOOTER (Reusable) ========= -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <!-- About -->
+        <div class="col-lg-5">
+          <h5 class="footer-title">ARIIA</h5>
+          <p class="footer-text">
+            The International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA-2026)
+            is organised by the Department of Computer Science and Engineering (AI & ML), Dayananda Sagar University.
+            The conference promotes exchange of ideas, research, and industry collaboration.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-sub">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-6 col-lg-4">
+          <h6 class="footer-sub">Contact Us</h6>
+          <address class="footer-addr">
+            <strong>Convener, ARIIA-2026</strong><br>
+            Dayananda Sagar University,<br>
+            Devarakaggalahalli, Harohalli,<br>
+            Kanakapura Road, Bengaluru South Dt. – 562 112, India.
+          </address>
+          <p class="mb-2">
+            Email:
+            <a class="footer-link" href="mailto:ariia@dsu.edu.in">ariia@dsu.edu.in</a>
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4.98 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM3 8.9h4v12H3v-12zM9 8.9h3.8v1.7h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.2-.02-2.74-1.67-2.74-1.68 0-1.94 1.31-1.94 2.66V21H9v-12z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <small>© 2026 ARIIA — All Rights Reserved</small>
+        <small>Designed and developed by Dr. Basab Nath in association with Manipal University Jaipur and Dayananda Sagar University</small>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Back-to-top -->
+<button id="backToTop" class="btn btn-primary back-to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6l-8 8h5v4h6v-4h5l-8-8z" fill="#fff"/></svg>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

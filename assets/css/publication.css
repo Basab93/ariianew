@@ -1,0 +1,42 @@
+/* Hero banner (matches Contact style) */
+.pub-hero{
+  height: 42vh;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 74px; /* fixed navbar offset */
+  position: relative;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(11,103,179,.85), rgba(11,93,179,.9)),
+    url('../img/hero-publication.jpg') center/cover no-repeat;
+}
+.pub-hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(circle at 70% 30%, rgba(255,20,147,.18), transparent 60%);
+  pointer-events:none;
+}
+.pub-kicker{
+  letter-spacing:.16em;
+  opacity:.95;
+}
+.pub-title{
+  font-family:"Montserrat",sans-serif;
+  letter-spacing:.02em;
+}
+.pub-subtitle{
+  opacity:.9;
+}
+
+/* Card + icon boxes */
+.pub-card .pub-ico-box{
+  display:flex; gap:10px; align-items:flex-start;
+  background:#fff; border:1px solid #e9eef7; border-radius:12px;
+  padding:12px; box-shadow:0 8px 22px rgba(2,6,23,.06);
+}
+.pub-card .ico{ font-size:22px; line-height:1; }
+
+/* Active nav underline */
+.custom-navbar .nav-link.active { color:#0b67b3 !important; border-bottom:2px solid #0b67b3; }

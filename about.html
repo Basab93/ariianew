@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | ARIIA 2026</title>
+  <meta name="description" content="Learn about the vision, mission, and team behind ARIIA 2026." />
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+
+  <style>
+    :root{ --nav-h:74px; }
+    .aboutus-hero{
+      height: 48vh; min-height: 340px; margin-top: var(--nav-h);
+      display:flex; align-items:center; color:#fff; position:relative; text-align:center;
+      background:
+        linear-gradient(180deg, rgba(11,103,179,.9), rgba(11,93,179,.92)),
+        url('images/hero-about-us.jpg') center/cover no-repeat;
+    }
+    .aboutus-hero::after{
+      content:""; position:absolute; inset:0; pointer-events:none;
+      background: radial-gradient(60% 60% at 75% 30%, rgba(255,20,147,.18), transparent 60%);
+    }
+    .aboutus-title{ font-family:"Montserrat",sans-serif; font-weight:800; letter-spacing:.02em; }
+    .section-pad{ padding:72px 0; }
+
+    /* Mission / Vision cards */
+    .mv-card{
+      background:#fff; border:1px solid #e9eef7; border-radius:16px;
+      padding:24px; box-shadow:0 10px 24px rgba(2,6,23,.06);
+      height:100%;
+    }
+    .mv-card h3{ color:#0b2862; font-family:"Montserrat",sans-serif; font-weight:800; }
+    .mv-icon{
+      width:46px; height:46px; border-radius:12px; display:grid; place-items:center;
+      background:linear-gradient(135deg,#0b67b3,#ff2b77); color:#fff; margin-bottom:12px;
+      box-shadow:0 6px 16px rgba(11,103,179,.18);
+    }
+
+    /* Fast facts */
+    .facts{
+      background: linear-gradient(180deg,#f8fbff 0%, #ffffff 100%);
+      border:1px solid #e9eef7; border-radius:16px; padding:22px;
+    }
+    .fact{
+      background:#fff; border:1px solid #e9eef7; border-radius:14px; padding:18px;
+      text-align:center; height:100%;
+      box-shadow:0 10px 24px rgba(2,6,23,.05);
+    }
+    .fact .num{ font-size:2rem; font-weight:800; color:#0b2862; font-family:"Montserrat",sans-serif; }
+    .fact .lbl{ color:#4b5563; font-weight:600; letter-spacing:.02em; }
+
+    /* Timeline */
+    .timeline{
+      position:relative; margin-left:12px;
+      border-left:3px solid #e3ecfb; padding-left:24px;
+    }
+    .timeline .dot{
+      position:absolute; left:-10px; width:18px; height:18px; border-radius:50%;
+      background:#fff; border:3px solid #0b67b3; box-shadow:0 0 0 4px rgba(11,103,179,.1);
+    }
+    .tl-item{ position:relative; margin-bottom:28px; }
+    .tl-item .title{ font-weight:800; color:#0b2862; margin-bottom:6px; }
+    .tl-item .meta{ font-size:.9rem; color:#6b7280; }
+
+    /* CTA band */
+    .cta-soft {
+      background: linear-gradient(90deg, #0b67b3 0%, #0b5db3 50%, #0b78ff 100%);
+      border-radius: 18px; color:#fff;
+      box-shadow:0 18px 40px rgba(11,103,179,.18);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <img src="logo-removebg-preview.png" alt="ARIIA Logo" height="48" class="me-1">
+      <span>ARIIA 2026</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center text-uppercase fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
+        <li class="nav-item"><a class="nav-link" href="submission.html">Submission</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="aboutus-hero">
+  <div class="container position-relative">
+    <div class="about-kicker" aria-hidden="true"></div>
+    <h1 class="aboutus-title display-5 mb-1">About Us</h1>
+    <p class="mb-0 opacity-75">Who we are and what drives ARIIA 2026</p>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-xl-10">
+        <h2 class="h1 fw-bold mb-3" style="color:#0b2862;">Our Story</h2>
+        <p class="lead mb-4">
+          ARIIA is a collaborative initiative to advance <strong>Augmented Reality</strong>, <strong>Intelligent Systems</strong>, and
+          <strong>Industrial Automation</strong>. The 2026 edition unites academia, industry, and policy makers to explore breakthroughs,
+          share applications, and accelerate the adoption of next-generation smart systems.
+        </p>
+        <p>
+          Hosted by <strong>Dayananda Sagar University</strong> with MIT (MAHE) and Manipal University Jaipur as partners, and in association
+          with the University of Warwick and the University of Malta, ARIIA 2026 emphasizes impactful research, ethical innovation, and
+          global collaboration.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERSITY DETAILS -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Organised by -->
+      <div class="col-12">
+        <h3 class="h5 text-uppercase text-muted mb-3">Organised by</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-building"></i></div>
+          <h3 class="mb-2">Dayananda Sagar University (DSU)</h3>
+          <p class="text-muted mb-2">Bengaluru, India</p>
+          <p class="mb-3">
+            Dayananda Sagar University (DSU) is a renowned institution focused on innovation-driven education and research excellence. 
+            The Department of Computer Science and Engineering (AI & ML) hosts ARIIA 2026, fostering collaboration in emerging areas like 
+            intelligent automation, data science, and immersive technologies.
+          </p>
+          <a href="https://www.dsu.edu.in/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+            Visit DSU <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Partners -->
+      <div class="col-12 mt-5">
+        <h3 class="h5 text-uppercase text-muted mb-3">Partners</h3>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-mortarboard"></i></div>
+          <h3 class="mb-2">MIT (MAHE)</h3>
+          <p class="text-muted mb-2">Manipal, India</p>
+          <p class="mb-3">
+            Manipal Institute of Technology (MIT), under Manipal Academy of Higher Education (MAHE), is one of India's leading technical institutions. 
+            With its deep commitment to innovation and research, MIT (MAHE) partners with ARIIA 2026 to promote interdisciplinary collaboration 
+            across AR/VR, AI, and intelligent systems.
+          </p>
+          <a href="https://manipal.edu/mit.html" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+            Visit MIT (MAHE) <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-bank2"></i></div>
+          <h3 class="mb-2">Manipal University Jaipur (MUJ)</h3>
+          <p class="text-muted mb-2">Jaipur, India</p>
+          <p class="mb-3">
+            Manipal University Jaipur (MUJ) plays a key academic role in ARIIA 2026, contributing to research and outreach initiatives. 
+            Known for its interdisciplinary focus and vibrant innovation ecosystem, MUJ aligns with ARIIA’s goal of bridging academia and industry.
+          </p>
+          <a href="https://jaipur.manipal.edu/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+            Visit MUJ <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- In Association With -->
+      <div class="col-12 mt-5">
+        <h3 class="h5 text-uppercase text-muted mb-3">In Association With</h3>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-globe"></i></div>
+          <h3 class="mb-2">University of Warwick</h3>
+          <p class="text-muted mb-2">Coventry, United Kingdom</p>
+          <p class="mb-3">
+            The University of Warwick is a globally recognised research university with excellence in computing, manufacturing, and applied sciences. 
+            Warwick supports ARIIA 2026 by extending international collaboration and joint research perspectives.
+          </p>
+          <a href="https://warwick.ac.uk/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+            Visit Warwick <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="bi bi-building-check"></i></div>
+          <h3 class="mb-2">University of Malta</h3>
+          <p class="text-muted mb-2">Msida, Malta</p>
+          <p class="mb-3">
+            The University of Malta contributes to ARIIA 2026 with its strength in engineering, computing, and technology-driven research. 
+            Its participation enhances the conference’s global academic footprint and encourages multi-national cooperation.
+          </p>
+          <a href="https://www.um.edu.mt/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+            Visit University of Malta <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAST FACTS -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="facts">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="fact reveal">
+            <div class="num">2</div>
+            <div class="lbl">Days</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fact reveal">
+            <div class="num">5+</div>
+            <div class="lbl">Tracks</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fact reveal">
+            <div class="num">20+</div>
+            <div class="lbl">Invited Experts</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fact reveal">
+            <div class="num">200+</div>
+            <div class="lbl">Participants</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="cta-soft p-4 p-md-5 text-center reveal">
+      <h3 class="fw-bold mb-2">Be part of ARIIA 2026</h3>
+      <p class="mb-4">Submit your paper, present your work, or join us to explore cutting-edge research.</p>
+      <a href="submission.html" class="btn btn-light fw-bold me-2">Submit via CMT</a>
+      <a href="publication.html" class="btn btn-outline-light fw-bold">Publication</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (reused) -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5 class="footer-title">ARIIA</h5>
+          <p class="footer-text">
+            The International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA-2026)
+            is organised by the Department of Computer Science and Engineering (AI & ML), Dayananda Sagar University.
+            The conference promotes exchange of ideas, research, and industry collaboration.
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-sub">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6 class="footer-sub">Contact Us</h6>
+          <address class="footer-addr">
+            <strong>Convener, ARIIA-2026</strong><br>
+            Dayananda Sagar University,<br>
+            Devarakaggalahalli, Harohalli,<br>
+            Kanakapura Road, Bengaluru South Dt. – 562 112, India.
+          </address>
+          <p class="mb-2">Email: <a class="footer-link" href="mailto:ariia@dsu.edu.in">ariia@dsu.edu.in</a></p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4.98 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM3 8.9h4v12H3v-12zM9 8.9h3.8v1.7h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.2-.02-2.74-1.67-2.74-1.68 0-1.94 1.31-1.94 2.66V21H9v-12z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <small>© 2026 ARIIA — All Rights Reserved</small>
+        <small>Designed and developed by Dr. Basab Nath in association with Manipal University Jaipur and Dayananda Sagar University</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

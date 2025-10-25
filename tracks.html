@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conference Tracks | ARIIA 2026</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css" />
+
+  <style>
+    /* ===== Hero Section ===== */
+    .tracks-hero {
+      height: 45vh;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 74px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(11,103,179,0.85), rgba(11,93,179,0.92)),
+        url('images/hero-tracks.jpg') center/cover no-repeat;
+    }
+    .tracks-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(255,20,147,0.18), transparent 60%);
+      pointer-events: none;
+    }
+    .tracks-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    /* ===== Tracks Section ===== */
+    .tracks-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .track-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.8rem;
+      box-shadow: 0 10px 24px rgba(2,6,23,.06);
+      transition: all .25s ease;
+      height: 100%;
+      border: 1px solid #e9eef7;
+      position: relative;
+    }
+    .track-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px rgba(2,6,23,.12);
+    }
+    .track-card h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #0b2862;
+      margin-bottom: 10px;
+    }
+
+    /* Category icon in circle */
+    .track-icon {
+      position: absolute;
+      top: -22px;
+      right: 22px;
+      background: linear-gradient(135deg, #0b67b3, #ff2b77);
+      color: #fff;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      box-shadow: 0 6px 14px rgba(11,103,179,.2);
+    }
+
+    /* Bullet list with subtle lines */
+    .track-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .track-list li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 6px;
+    }
+    .track-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #0b67b3;
+      font-size: 1rem;
+      top: -1px;
+    }
+
+    .bg-gradient-light {
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+    }
+
+    .section-head .underline {
+      width: 64px;
+      height: 4px;
+      border-radius: 3px;
+      background: #0b67b3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <img src="logo-removebg-preview.png" alt="ARIIA Logo" height="50" class="me-1">
+      <span>ARIIA 2026</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center text-uppercase fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tracks.html">Tracks</a></li>
+        <li class="nav-item"><a class="nav-link" href="submission.html">Submission</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="tracks-hero">
+  <div class="container">
+    <h1 class="tracks-title mb-2">Conference Tracks</h1>
+    <p class="mb-0 opacity-75">Innovating across disciplines to shape the intelligent future</p>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="section-pad bg-gradient-light" role="main">
+  <div class="container tracks-wrap">
+    <div class="section-head text-center mb-5">
+      <div class="underline mx-auto mb-2"></div>
+      <p class="text-uppercase fw-bold small text-primary mb-1">ARIIA 2026</p>
+      <h2 class="fw-bold" style="font-family:Montserrat, sans-serif;">Explore the Research Tracks</h2>
+      <p class="text-muted mt-2 mb-0">ARIIA 2026 invites original contributions aligned with the following research tracks. Topics include, but are not limited to:</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="track-card h-100">
+          <div class="track-icon"><i class="bi bi-gear-fill"></i></div>
+          <h4>Robotics and Industrial Automation</h4>
+          <ul class="track-list">
+            <li>Control and Automation</li>
+            <li>3D Printing & CAD Modelling</li>
+            <li>Humanoid & Soft Robotics</li>
+            <li>Machine Vision & Perception</li>
+            <li>Unmanned Aerial Vehicles (UAVs)</li>
+            <li>Healthcare Automation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="track-card h-100">
+          <div class="track-icon"><i class="bi bi-building-gear"></i></div>
+          <h4>Industry 4.0 and 5.0</h4>
+          <ul class="track-list">
+            <li>Digital Twin & Cyber-Physical Systems</li>
+            <li>Augmented Reality & Human–Machine Collaboration</li>
+            <li>Predictive Maintenance</li>
+            <li>Green & Smart Manufacturing</li>
+            <li>IIoT and Data Analytics</li>
+            <li>Automation in Agriculture</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="track-card h-100">
+          <div class="track-icon"><i class="bi bi-heart-pulse"></i></div>
+          <h4>Bioengineering and Medical Technologies</h4>
+          <ul class="track-list">
+            <li>Biomedical Sensors & Wearables</li>
+            <li>Health Informatics & AR/VR Applications</li>
+            <li>Biomedical Imaging & Diagnostics</li>
+            <li>Therapeutic & Assistive Robotics</li>
+            <li>Nanomaterials in Medicine</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="track-card h-100">
+          <div class="track-icon"><i class="bi bi-cpu"></i></div>
+          <h4>Artificial Intelligence and Machine Learning</h4>
+          <ul class="track-list">
+            <li>Deep & Reinforcement Learning</li>
+            <li>Generative AI & Computer Vision</li>
+            <li>AI for Healthcare & Agriculture</li>
+            <li>Natural Language Processing</li>
+            <li>Data Mining & Big Data Analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="track-card h-100">
+          <div class="track-icon"><i class="bi bi-wifi"></i></div>
+          <h4>Communication and Networking</h4>
+          <ul class="track-list">
+            <li>5G & Beyond Wireless Networks</li>
+            <li>IoT and Edge Computing</li>
+            <li>Blockchain in Communication</li>
+            <li>Cybersecurity and Privacy</li>
+            <li>Optical and Cognitive Networks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <p class="text-muted small">
+        If your paper spans multiple domains, please select the closest primary track during submission.
+        The program chairs may reassign papers for optimal review.
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5 class="footer-title">ARIIA</h5>
+          <p class="footer-text">
+            The International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA-2026)
+            is organised by the Department of Computer Science and Engineering (AI & ML), Dayananda Sagar University.
+            The conference promotes exchange of ideas, research, and industry collaboration.
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-sub">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6 class="footer-sub">Contact Us</h6>
+          <address class="footer-addr">
+            <strong>Convener, ARIIA-2026</strong><br>
+            Dayananda Sagar University,<br>
+            Devarakaggalahalli, Harohalli,<br>
+            Kanakapura Road, Bengaluru South Dt. – 562 112, India.
+          </address>
+          <p class="mb-2">
+            Email:
+            <a class="footer-link" href="mailto:ariia@dsu.edu.in">ariia@dsu.edu.in</a>
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4.98 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM3 8.9h4v12H3v-12zM9 8.9h3.8v1.7h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.2-.02-2.74-1.67-2.74-1.68 0-1.94 1.31-1.94 2.66V21H9v-12z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <small>© 2026 ARIIA — All Rights Reserved</small>
+        <small>Designed and developed by Dr. Basab Nath in association with Manipal University Jaipur and Dayananda Sagar University</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

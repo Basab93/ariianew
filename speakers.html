@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invited Speakers | ARIIA 2026</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons (for optional icons later) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Global site CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ===== Hero (same pattern as Contact/Publication) ===== */
+    .speakers-hero{
+      height: 45vh;
+      min-height: 320px;
+      display:flex; align-items:center; justify-content:center;
+      margin-top:74px; /* fixed navbar offset */
+      color:#fff; text-align:center; position:relative;
+      background:
+        linear-gradient(180deg, rgba(11,103,179,.85), rgba(11,93,179,.92)),
+        url('images/hero-speakers.jpg') center/cover no-repeat; /* optional image */
+    }
+    .speakers-hero::after{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(circle at 70% 30%, rgba(255,20,147,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .speakers-title{
+      font-family:"Montserrat",sans-serif; font-weight:800; letter-spacing:.02em;
+    }
+
+    /* ===== Speaker grid ===== */
+    .speakers-wrap{
+      max-width: 1100px; margin: 0 auto;
+    }
+    .speaker-card{
+      background:#fff;
+      border:1px solid #e9eef7;
+      border-radius:16px;
+      padding:18px;
+      text-align:center;
+      box-shadow:0 10px 24px rgba(2,6,23,.06);
+      transition: transform .18s ease, box-shadow .18s ease;
+      height:100%;
+    }
+    .speaker-card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px rgba(2,6,23,.12);
+    }
+    .avatar-ring{
+      width:116px; height:116px; border-radius:999px; margin:0 auto 12px;
+      padding:3px; background: linear-gradient(135deg, #0b67b3, #ff2b77);
+    }
+    .avatar-ring .avatar{
+      width:100%; height:100%; border-radius:999px; display:block; object-fit:cover;
+      background:#f2f6ff;
+    }
+    .speaker-name{
+      font-weight:800; color:#0b2240; margin-bottom:4px;
+      font-family:"Montserrat",sans-serif;
+    }
+    .speaker-affil{
+      color:#6b7280; font-size:.95rem; line-height:1.35;
+    }
+
+    /* Section header underline */
+    .section-head .underline{ width:64px; height:4px; border-radius:3px; background:#0b67b3; }
+
+    /* Smooth section bg like others */
+    .bg-gradient-light{ background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR (reused) ===== -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <img src="logo-removebg-preview.png" alt="ARIIA Logo" height="50" class="me-1">
+      <span>ARIIA 2026</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center text-uppercase fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link active" href="speakers.html">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="tracks.html">Tracks</a></li>
+        <li class="nav-item"><a class="nav-link" href="submission.html">Submission</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<header class="speakers-hero">
+  <div class="container">
+    <h1 class="speakers-title mb-2">Invited Speakers</h1>
+    <p class="mb-0 opacity-75">Leaders from academia and industry</p>
+  </div>
+</header>
+
+<!-- ===== SPEAKERS GRID ===== -->
+<main class="section-pad bg-gradient-light" role="main">
+  <div class="container speakers-wrap">
+    <div class="section-head text-center mb-4">
+      <div class="underline mx-auto mb-2"></div>
+      <p class="text-uppercase fw-bold small text-primary mb-1">ARIIA 2026</p>
+      <h2 class="fw-bold" style="font-family:Montserrat, sans-serif;">Meet Our Speakers</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Speaker 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="speaker-card h-100">
+          <div class="avatar-ring">
+            <img class="avatar" src="images/amit.jfif" alt="Portrait of Dr. Amit Dwivedi">
+          </div>
+          <div class="speaker-name">Dr. Amit Dwivedi</div>
+          <div class="speaker-affil">
+            University of Warwick<br>United Kingdom
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="speaker-card h-100">
+          <div class="avatar-ring">
+            <img class="avatar" src="images/lalit.jpeg" alt="Portrait of Dr. Lalit Garg">
+          </div>
+          <div class="speaker-name">Dr. Lalit Garg</div>
+          <div class="speaker-affil">
+            University of Malta<br>Malta
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="speaker-card h-100">
+          <div class="avatar-ring">
+            <img class="avatar" src="images/Mayukh Das.jpeg" alt="Portrait of Mayukh Das S">
+          </div>
+          <div class="speaker-name">Mayukh Das S</div>
+          <div class="speaker-affil">
+            Microsoft<br>India
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 4 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="speaker-card h-100">
+          <div class="avatar-ring">
+            <img class="avatar" src="images/Dr. Harikrishnan A.L. Ramiah.jpeg" alt="Portrait of Dr. Harikrishnan Ramaiah">
+          </div>
+          <div class="speaker-name">Dr. Harikrishnan Ramaiah</div>
+          <div class="speaker-affil">
+            Universiti Malaya<br>Malaysia
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 5 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="speaker-card h-100">
+          <div class="avatar-ring">
+            <img class="avatar" src="images/ketan.png" alt="Portrait of Dr. Ketan Kotecha">
+          </div>
+          <div class="speaker-name">Dr. Ketan Kotecha</div>
+          <div class="speaker-affil">
+            Symbiosis Institute of Technology<br>India
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more speakers here as needed -->
+
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER (reused) ===== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5 class="footer-title">ARIIA</h5>
+          <p class="footer-text">
+            The International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA-2026)
+            is organised by the Department of Computer Science and Engineering (AI & ML), Dayananda Sagar University.
+            The conference promotes exchange of ideas, research, and industry collaboration.
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-sub">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h6 class="footer-sub">Contact Us</h6>
+          <address class="footer-addr">
+            <strong>Convener, ARIIA-2026</strong><br>
+            Dayananda Sagar University,<br>
+            Devarakaggalahalli, Harohalli,<br>
+            Kanakapura Road, Bengaluru South Dt. – 562 112, India.
+          </address>
+          <p class="mb-2">
+            Email:
+            <a class="footer-link" href="mailto:ariia@dsu.edu.in">ariia@dsu.edu.in</a>
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4.98 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM3 8.9h4v12H3v-12zM9 8.9h3.8v1.7h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.2-.02-2.74-1.67-2.74-1.68 0-1.94 1.31-1.94 2.66V21H9v-12z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <small>© 2026 ARIIA — All Rights Reserved</small>
+        <small>Designed and developed by Dr. Basab Nath in association with Manipal University Jaipur and Dayananda Sagar University</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
