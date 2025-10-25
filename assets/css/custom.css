@@ -106,7 +106,7 @@ h1, h2, h3, .navbar-brand { font-family: "Montserrat", sans-serif; }
 .hero-carousel .hero-caption {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: 2rem;
   padding: 1rem;
   text-shadow: 0 4px 20px rgba(0,0,0,0.6);
